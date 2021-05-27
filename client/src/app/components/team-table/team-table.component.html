@@ -1,0 +1,26 @@
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Nombres</th>
+        <th scope="col">Partidos Ganados</th>
+        <th scope="col">Partidos Perdidos</th>
+        <th scope="col">Partidos Empatados</th>
+        <th scope="col">Puntos</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="table-active" *ngFor = "let team of teams">
+        <th>{{team.Nombre}}</th>
+        <td>{{team.ParGanados}}</td>
+        <td>{{team.ParPerdidos}}</td>
+        <td>{{team.ParEmpatados}}</td>
+        <td>{{team.Puntos}}</td>
+        <td>
+            <button type="button" routerLink="/teams/act/{{team.id}}" class="btn btn-primary btn-sm">Actualizar</button>
+        </td>
+        <td>
+            <button type="button" class="btn btn-primary btn-sm" (click)= "borrar(team.id)" >Borrar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

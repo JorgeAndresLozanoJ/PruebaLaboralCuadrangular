@@ -1,0 +1,7 @@
+<div class="form-group">
+    <label class="form-label mt-4" >Ingrese el Nombre del equipo a registrar</label>
+    <input type="text" value="" class="form-control" id="NombreTeam" [(ngModel)]="team.Nombre" name="NombreTeam">  
+  </div>
+  <div class="d-grid gap-2">
+    <button class="btn btn-lg btn-primary" routerLink="/teams"type="button" (click) = "Registrar()">Registrar equipo</button>
+  </div>

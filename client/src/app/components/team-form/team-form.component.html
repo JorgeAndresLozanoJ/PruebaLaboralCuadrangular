@@ -1,0 +1,19 @@
+<div class="form-group">
+    <label class="form-label mt-4" >Nombre del equipo</label>
+    <input type="text"  class="form-control" id="NombreTeam" [(ngModel)]="team[0].Nombre" name="NombreTeam">  
+</div>
+<div class="form-group">
+    <label class="form-label mt-4" >Partidos ganados</label>
+    <input type="text"  class="form-control" id="Ganados" [(ngModel)]="team[0].ParGanados" name="Ganados">  
+</div>
+<div class="form-group">
+    <label class="form-label mt-4" >Partidos perdidos</label>
+    <input type="text"  class="form-control" id="Perdidos" [(ngModel)]="team[0].ParPerdidos" name="Perdidos">  
+</div>
+<div class="form-group">
+    <label class="form-label mt-4" >Partidos empatados</label>
+    <input type="text"  class="form-control" id="Empatados" [(ngModel)]="team[0].ParEmpatados" name="Empatados">  
+</div>
+<div class="d-grid gap-2">
+    <button class="btn btn-lg btn-primary" routerLink="/teams"type="button" (click) = "Actualizar()">Guardar cambios del equipo</button>
+  </div>
